@@ -9,7 +9,6 @@ import FlashIcon from '@material-ui/icons/FlashOn'
 import IconButton from '@material-ui/core/IconButton'
 
 
-
 const SwipeButtons = () => {
     return (
         <div className={styles.swipeButtons}>
@@ -28,8 +27,6 @@ const SwipeButtons = () => {
             <IconButton className={styles.swipeButtons__lightning}>
                 <FlashIcon fontSize="large"/>
             </IconButton>
-            
-
         </div>
     )
 }
