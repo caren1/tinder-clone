@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Header } from './components/'
+import { Header, TinderCards } from './components/'
 // Header
 // TinderCard
 // Footer
@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="app">
       <Header />
+      <TinderCards />
     </div>
   );
 }
