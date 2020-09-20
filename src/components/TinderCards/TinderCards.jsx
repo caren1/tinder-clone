@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import TinderCard from 'react-tinder-card'
+import database from '../../firebase'
 import styles from './TinderCards.module.css'
 
 
@@ -15,6 +16,12 @@ const TinderCards = () => {
             url: 'https://www.biography.com/.image/t_share/MTY2NzA3ODE3OTgwMzcyMjYw/jeff-bezos-andrew-harrer_bloomberg-via-getty-images.jpg',
         },
     ])
+
+    useEffect(() => {
+        database.collection('people').onSnapshot((snapshot) => (
+            setPeople(snapshot.docs.map((doc) => doc.data()))
+        ))
+    }, [])
 
     const swiped = (direction, nameToDelete) => {
         console.log("removing: " + nameToDelete);
