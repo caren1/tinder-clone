@@ -14,7 +14,7 @@ const Header = ({ backButton }) => {
     return (
         <div className={styles.header}>
             { backButton ? (
-                    <IconButton onCLick={() => history.replace(backButton)}>
+                    <IconButton onClick={() => history.replace(backButton)}>
                         <ArrowBackIosIcon fontSize="large" className={styles.header__icon}/>
                     </IconButton>
             ) : (

@@ -25,3 +25,33 @@
     padding: 20px;
     color: gray;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.chatScreen__input {
+    display: flex;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid lightgray;
+}
+
+.chatScreen__inputField {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+
+.chatScreen__inputButton {
+    border: none;
+    margin-right: 20px;
+    background-color: white;
+    font-weight: bolder;
+    color: #fe3d71;
+}
+
